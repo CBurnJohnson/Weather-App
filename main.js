@@ -15,7 +15,9 @@ window.addEventListener('load', () => {
 
             const { summary, temperature, icon } = data.currently;
 
-            document.getElementById('timezone').innerHTML = data.timezone;
+            document.getElementById(
+                'timezone'
+            ).innerHTML = `Timezone: ${data.timezone}`;
             document.getElementById('summary').innerHTML = summary;
             document.getElementById('temp').innerHTML = `${temperature}&#176;F`;
 
