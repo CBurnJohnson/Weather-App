@@ -19,7 +19,9 @@ window.addEventListener('load', () => {
                 'timezone'
             ).innerHTML = `Timezone: ${data.timezone}`;
             document.getElementById('summary').innerHTML = summary;
-            document.getElementById('temp').innerHTML = `${temperature}&#176;F`;
+            document.getElementById('temp').innerHTML = `${Math.floor(
+                temperature
+            )}&#176;F`;
 
             setIcon('icon', icon);
         });

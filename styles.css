@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Passion+One&display=swap');
 
 * {
     margin: 0;
@@ -8,39 +8,45 @@
 }
 
 body {
-    background: #2193b0; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-        to right,
-        #6dd5ed,
-        #2193b0
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-        to right,
-        #6dd5ed,
-        #2193b0
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: rgb(109, 213, 237);
+    background: radial-gradient(
+        circle,
+        rgba(109, 213, 237, 1) 30%,
+        rgba(33, 147, 176, 1) 100%
+    );
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 6rem;
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 2rem;
+    font-family: 'Passion One', cursive;
 }
 
 .weather-container {
-    margin: 5rem auto;
+    margin: 2rem auto;
     text-align: center;
-    width: 80%;
+    width: 50%;
+    border-radius: 20px;
+    background-color: #f8f8ff;
+    padding: 2rem 0.5rem;
+    box-shadow: 0 0 10px;
 }
 
 #temp {
     font-size: 3rem;
+    color: #2193b0;
 }
 
 #summary {
     font-size: 2rem;
+    color: #6dd5ed;
 }
 
 #icon {
     margin: 2rem 0;
+}
+
+#timezone {
+    color: #666666;
 }
